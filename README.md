@@ -14,9 +14,26 @@ npm i browser-kill
 
 ```javascript
 
-const BrowserKill = require('browser-kill');
+const Brkill = require('browser-kill');
+
+(async () => {
+
+  // Kills chrome process
+  await Brkill.chrome();
+
+  // Kill firefox process
+  await Brkill.firefox();
+})
 
 ```
+
+## API
+
+- ##### `chrome()`
+  - Kills the chrome process, throws error if chrome process is not running
+
+- ##### `firefox()`
+  - Kills the chrome process, throws error if chrome process is not running
 
 ## Contributing
 
