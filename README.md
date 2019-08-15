@@ -1,6 +1,6 @@
 # browser-kill
 
-[![Build Status](https://img.shields.io/badge/build-passing-success.svg)](https://img.shields.io/badge/build-passing-success.svg)
+[![Build](https://img.shields.io/travis/com/arshadkazmi42/browser-kill.svg)](https://travis-ci.com/arshadkazmi42/browser-kill/)
 
 Kill browser process in Mac, Linux, Windows
 
