@@ -21,7 +21,7 @@ const Brkill = require('browser-kill');
   // Kills chrome process
   await Brkill.chrome();
 
-  // Kill firefox process
+  // Kills firefox process
   await Brkill.firefox();
 })
 
