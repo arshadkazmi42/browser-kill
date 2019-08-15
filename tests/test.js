@@ -1,13 +1,33 @@
 const { expect } = require('chai');
+const processExists = require('process-exists');
 
-// Import your code which to be tested
+const BrKill = require('../index');
+const { ProcessName } = require('../lib');
 
-// Initialize static data
+const ERROR_MESSAGE_CHROME = 'killing process chrome failed: process doesn\'t exist';
+const ERROR_MESSAGE_FIREFOX = 'killing process firefox failed: process doesn\'t exist';
 
 /**
-describe('description of the test', () => {
-  it('details of the specific test', () => {
-    expect(0).to.equal(0);
+ * !!!!!WARNING!!!!!!
+ * Running the test will kill the browser process
+ */
+describe('test kill browser process', () => {
+  it('should kill chrome process', async () => {
+    try  {
+      await BrKill.chrome();
+      const exists = await processExists(ProcessName.chrome());
+      expect(exists).to.equal(false);
+    } catch (err) {
+      expect(err.message.toLowerCase().includes(ERROR_MESSAGE_CHROME)).to.equal(true);
+    }
+  });
+  it('should kill firefox process', async () => {
+    try  {
+      await BrKill.firefox();
+      const exists = await processExists(ProcessName.firefox());      
+      expect(exists).to.equal(false);
+    } catch (err) {
+      expect(err.message.toLowerCase().includes(ERROR_MESSAGE_FIREFOX)).to.equal(true);
+    }
   });
 });
-**/
