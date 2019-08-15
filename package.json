@@ -9,13 +9,25 @@
     "test": "node_modules/mocha/bin/mocha tests/*"
   },
   "files": [
-    "index.js"
+    "index.js",
+    "lib/"
   ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/arshadkazmi42/browser-kill.git"
   },
-  "keywords": [],
+  "keywords": [
+    "browser",
+    "kill",
+    "browser kill",
+    "process kill",
+    "cross-platform",
+    "macos",
+    "linux",
+    "windows",
+    "chrome",
+    "firefox"
+  ],
   "devDependencies": {
     "chai": "^4.2.0",
     "eslint": "^5.11.1",
