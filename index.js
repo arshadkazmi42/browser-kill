@@ -1,10 +1,21 @@
-// Initial Function Here
-// This will be entry point of the library
+const fkill = require('fkill');
 
-const dummy = () => {
-    // Your code here
-}
+const { ProcessName } = require('./lib');
 
 
-// Export the functions
-module.exports = dummp;
+const chrome = async (force) => {
+  const procName = ProcessName.chrome();
+  return await fkill(procName, { force: force || true });
+};
+
+
+const firefox = async (force) => {
+  const procName = ProcessName.firefox();
+  return await fkill(procName, { force: force || true });
+};
+
+
+module.exports = {
+  chrome,
+  firefox
+};
