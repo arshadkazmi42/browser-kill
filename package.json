@@ -9,8 +9,7 @@
     "test": "node_modules/mocha/bin/mocha tests/*"
   },
   "files": [
-    "index.js",
-    "lib/"
+    "index.js"
   ],
   "repository": {
     "type": "git",
@@ -38,6 +37,7 @@
   "author": "Arshad Kazmi",
   "license": "MIT",
   "dependencies": {
-    "fkill": "^6.2.0"
+    "fkill": "^6.2.0",
+    "process-name": "^1.0.1"
   }
 }

@@ -1,16 +1,18 @@
 const fkill = require('fkill');
 
-const { ProcessName } = require('./lib');
+const { ProcessName, ProcessNameConstants } = require('process-name');
 
 
 const chrome = async (force) => {
-  const procName = ProcessName.chrome();
+  const { BROWSERS: { CHROME } } = ProcessNameConstants;
+  const procName = ProcessName.BROWSERS[CHROME][process.platform];
   return await fkill(procName, { force: force || true });
 };
 
 
 const firefox = async (force) => {
-  const procName = ProcessName.firefox();
+  const { BROWSERS: { FIREFOX } } = ProcessNameConstants;
+  const procName = ProcessName.BROWSERS[FIREFOX][process.platform];
   return await fkill(procName, { force: force || true });
 };
 
