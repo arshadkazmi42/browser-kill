@@ -1,6 +1,12 @@
 # browser-kill
 
-[![Build](https://img.shields.io/travis/com/arshadkazmi42/browser-kill.svg)](https://travis-ci.com/arshadkazmi42/browser-kill/)
+[![Build](https://github.com/arshadkazmi42/browser-kill/actions/workflows/nodejs.yml/badge.svg)](https://github.com/arshadkazmi42/browser-kill/actions/workflows/nodejs.yml)
+[![NPM Version](https://img.shields.io/npm/v/browser-kill.svg)](https://www.npmjs.com/package/browser-kill)
+[![NPM Downloads](https://img.shields.io/npm/dt/browser-kill.svg)](https://www.npmjs.com/package/browser-kill)
+[![Github Repo Size](https://img.shields.io/github/repo-size/arshadkazmi42/browser-kill.svg)](https://github.com/arshadkazmi42/browser-kill)
+[![LICENSE](https://img.shields.io/npm/l/browser-kill.svg)](https://github.com/arshadkazmi42/browser-kill/blob/master/LICENSE)
+[![Contributors](https://img.shields.io/github/contributors/arshadkazmi42/browser-kill.svg)](https://github.com/arshadkazmi42/browser-kill/graphs/contributors)
+[![Commit](https://img.shields.io/github/last-commit/arshadkazmi42/browser-kill.svg)](https://github.com/arshadkazmi42/browser-kill/commits/master)
 
 Kill browser process in Mac, Linux, Windows
 
