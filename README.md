@@ -8,9 +8,6 @@
 [![Contributors](https://img.shields.io/github/contributors/arshadkazmi42/browser-kill.svg)](https://github.com/arshadkazmi42/browser-kill/graphs/contributors)
 [![Commit](https://img.shields.io/github/last-commit/arshadkazmi42/browser-kill.svg)](https://github.com/arshadkazmi42/browser-kill/commits/master)
 
-
-[![Build](https://img.shields.io/travis/com/arshadkazmi42/browser-kill.svg)](https://travis-ci.com/arshadkazmi42/browser-kill/)
-
 Kill browser process in Mac, Linux, Windows
 
 ## Install
